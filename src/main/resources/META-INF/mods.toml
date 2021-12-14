@@ -1,23 +1,22 @@
 
 modLoader="javafml" #mandatory
-loaderVersion="[38,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+loaderVersion="[36,)" #mandatory
 license="All rights reserved"
 [[mods]] #mandatory
 modId="delaybegone" #mandatory
 version="${file.jarVersion}" #mandatory
 displayName="Delay Be Gone" #mandatory
-credits="Thanks for using Delay Be Gone" #optional
-authors="IamTis" #optional
 description='''
 Delay Be Gone is a simple forge mod to remove the block delay from shields.
-
 Features:
 This mod will reduce the block delay from 0.5 seconds or so to 0.
-
 User Experience:
 You will be able to more accurately block incoming attacks without the need to compensate for a delay that has no indicators or telltale signs.
 '''
+[[dependencies.delaybegone]]
+    modId="minecraft"
+    mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
-    versionRange="[1.18,1.19)"
+    versionRange="[1.16.5,1.17)"
     ordering="NONE"
     side="BOTH"
